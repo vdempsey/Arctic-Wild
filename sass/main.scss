@@ -1,0 +1,306 @@
+body {
+  // background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  height:100%;
+  font-family: helvetica;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://arcticwild.com/wp-content/themes/arcticwild/assets/img/hero-slide1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-container {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 200px);
+  // justify-content: space-around;
+  // align-items: center;
+  position: relative;
+  // align-content: space-between;
+  color: black;
+  margin: 0 auto;
+
+  // margin-top: -113px;
+  // background-color: white;
+  h1, h2, {
+    align-self: center;
+    text-align: center;
+    margin: 0px;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    }
+  h2 {
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 5px;
+    font-size: 20px;
+  }
+  img {
+    display: block;
+    align-self: center;
+    margin: 0 auto;
+  }
+  color: white;
+  .headline-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 460px;
+    margin: 10px auto 0 auto;
+    position: relative;
+  }
+  .separation {
+    height: 5px;
+    width: 300px;
+    background-color: white;
+    align-self: center;
+    margin: 10px auto;
+  }
+  .play {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: rgba(255,255,255, 0.3);
+    align-self: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 400px;
+    // position: relative;}
+
+  }
+
+  .play:hover {
+      height: 120px;
+      width: 120px;
+  }
+
+
+.arrow-triangle {
+  position: relative;
+  background-color: #ce620a;
+  text-align: left;
+  margin: 36px;
+}
+
+.arrow-triangle:hover {
+  position: relative;
+  background-color: #ce620a;
+  text-align: left;
+  margin: 36px;
+}
+
+.arrow-triangle:before,
+.arrow-triangle:after {
+  content: '';
+  position: absolute;
+  background-color: inherit;
+}
+
+.arrow-triangle,
+.arrow-triangle:before,
+.arrow-triangle:after {
+  width:  1.3em;
+  height: 1.3em;
+  border-top-right-radius: 30%;
+}
+
+.arrow-triangle:hover,
+.arrow-triangle:before:hover,
+.arrow-triangle:after:hover {
+  width:  2em;
+  height: 2em;
+}
+
+.arrow-triangle.left {
+  transform: rotate(-90deg) skewX(-30deg) scale(1,.866);
+}
+
+.arrow-triangle:before {
+  transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+
+.arrow-triangle:after {
+  transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+}
+
+
+
+  .cta-one {
+    align-self: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      font-family: helvetica, sans-serif;
+    }
+    position: absolute;
+    bottom: 50px;
+  }
+  .callout {
+    height: 30px;
+    width: 180px;
+    position: relative;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    min-height: 50px;
+    text-align: center;
+    border: 1px solid #d3701f;
+    background-color: #d3701f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.callout::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+  .callout.top::before {
+	left: 45%;
+	bottom: -20px;
+	border-top: 10px solid #d3701f;
+}
+}
+
+
+h1 {
+  font-size: 100px;
+}
+
+.nav-container {
+  z-index:1;
+  width: 1100px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 2px;
+  font-size: 14px;
+   .main-nav-container {
+     display: flex;
+     margin-top: 80px;
+   }
+
+  ul li { list-style-type: none;
+    margin: 20px;
+  }
+
+
+.menu-header {
+  padding: 20px 10px 10px 10px;
+  & :hover {
+    color: #d3701f;
+  }
+}
+
+  .dropdown {
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    // padding: 20px;
+}
+
+.dropbtn {
+    // background-color: none;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    padding: 20px 10px 10px 10px;
+    // .dropbtn:hover {
+    //   background-color: grey;
+    // }
+}
+
+  .dropdown-content {
+    font-size: 14px;
+    display:none;
+    position: absolute;
+    z-index: 1;
+    // flex-direction: column;
+    min-width: 160px;
+    background-color: #404040;
+    padding: 10px;
+    font-family: helvetica;
+    line-height: 50px;
+    color: #969594;
+
+    // padding: 20px;
+
+  }
+  .dropdown-content a {
+    color: #969594;
+    &:hover {
+      color: white;
+    }
+  }
+
+ //  hr.menu {
+ //    display: block;
+ // margin-top: 0.5em;
+ // margin-bottom: 0.5em;
+ // border-style: inset;
+ // background-color: #404040;
+ // border-width: 1px;
+ //    margin-left: -10px;
+ //    margin-right: -10px;
+ //  }
+
+    .dropdown:hover {
+      background-color: #404040;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      // padding: 5px;
+    }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #404040;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    // a {
+    //   border-bottom: 2px solid white;
+    // }
+    // padding:10px;
+}
+
+.dropdown:hover .dropdown-content a {
+  border-bottom: 0.5px solid #969594;
+  border-bottom-style: inset;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.dropdown:hover .dropdown-content a:last-child {
+  border-bottom: none;
+  margin-bottom: -10px;
+}
+
+.dropdown:hover .dropdown-content a:first-child {
+  margin-top: -10px;
+}
+
+}
